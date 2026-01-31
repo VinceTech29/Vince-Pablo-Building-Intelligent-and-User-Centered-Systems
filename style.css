@@ -467,10 +467,6 @@ span{
 }
 
 /* CERTIFICATES */
-.certificates{
-    padding: 10rem 9%;
-}
-
 .certificates-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -482,12 +478,55 @@ span{
     padding: 2.5rem;
     border-radius: 1.5rem;
     transition: 0.3s ease;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.card-header {
+    display: flex;
+    align-items: center;      /* vertical alignment */
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card-header h3 {
+    margin: 0;
 }
 
 .certificate-card:hover{
     border-color: #3B82F6;
     box-shadow: 0 0 25px rgba(59,130,246,0.3);
     transform: translateY(-8px);
+}
+
+.certificate-ribbon {
+    align-self: flex-end; 
+    display: inline-flex;
+    width: fit-content;
+    padding: 0.85rem;
+    border-radius: 1rem;
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.award-icon {
+    width: 34px;
+    height: 34px;
+    color: #60a5fa;
+}
+
+
+.certificate-card:hover .certificate-ribbon {
+    background-color: rgba(59, 130, 246, 0.2); /* bg-blue-500/20 on hover */
+}
+
+.award-icon {
+    width: 24px;  /* w-6 */
+    height: 24px; /* h-6 */
+    color: #60a5fa; /* text-blue-400 */
 }
 
 .certificate-card h3{
@@ -504,30 +543,40 @@ span{
     color: #777;
 }
 
-.certificate-tags span{
+
+.certificate-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem; 
+}
+
+.certificate-tags span {
     display: inline-block;
-    margin: 0.5rem 0.5rem 0 0;
-    padding: 0.5rem 1.2rem;
+    padding: 0.4rem 1rem;
     border: 1px solid #3B82F6;
     border-radius: 2rem;
     font-size: 1.2rem;
     color: #3B82F6;
+    white-space: nowrap;
 }
 
-.cert-btn{
+.cert-btn {
     display: inline-block;
-    margin-top: 2rem;
     padding: 0.8rem 1.6rem;
     border: 1px solid #3B82F6;
     border-radius: 3rem;
     color: #3B82F6;
     transition: 0.3s ease;
+    text-align: center;
+    margin-top: 1.5rem; 
 }
 
 .cert-btn:hover{
     background: #3B82F6;
     color: black;
 }
+
 .gallery-section {
   padding: 5rem 5%;
   background-color: black;
