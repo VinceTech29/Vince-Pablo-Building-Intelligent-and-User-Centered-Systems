@@ -1,0 +1,175 @@
+<svg width="1200" height="340" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#020b2a"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid -->
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#0f172a" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#grid)" opacity="0.3"/>
+
+  <!-- Scan line -->
+  <rect x="0" y="0" width="1200" height="3" fill="#38bdf8" opacity="0.6">
+    <animate attributeName="y" from="0" to="340" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner accents -->
+  <polyline points="20,40 20,20 40,20" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <polyline points="1180,300 1180,320 1160,320" fill="none" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- Data bars -->
+  <g opacity="0.7">
+    <rect x="160" y="260" width="10" height="40" fill="#38bdf8">
+      <animate attributeName="height" values="20;60;30" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="180" y="250" width="10" height="50" fill="#38bdf8">
+      <animate attributeName="height" values="30;70;40" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="200" y="270" width="10" height="30" fill="#38bdf8">
+      <animate attributeName="height" values="15;50;25" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- IoT nodes -->
+  <g fill="#38bdf8">
+    <circle cx="960" cy="90" r="4">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="120" r="4">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1040" cy="90" r="4">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <line x1="960" y1="90" x2="1000" y2="120" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="1000" y1="120" x2="1040" y2="90" stroke="#38bdf8" stroke-width="1"/>
+  </g>
+
+  <!-- Floating particles -->
+  <circle cx="300" cy="60" r="2" fill="#38bdf8">
+    <animate attributeName="cy" from="340" to="-10" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="720" cy="40" r="2" fill="#38bdf8">
+    <animate attributeName="cy" from="360" to="-20" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="70" r="2" fill="#38bdf8">
+    <animate attributeName="cy" from="380" to="-30" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Name -->
+  <text x="600" y="145"
+        text-anchor="middle"
+        font-size="54"
+        font-family="Segoe UI, Arial, sans-serif"
+        fill="#38bdf8"
+        filter="url(#glow)">
+    Vince Pablo
+  </text>
+
+  <!-- Role -->
+  <text x="600" y="190"
+        text-anchor="middle"
+        font-size="22"
+        font-family="Segoe UI, Arial, sans-serif"
+        fill="#e5e7eb">
+    UI / UX • IoT • Database
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="225"
+        text-anchor="middle"
+        font-size="16"
+        font-family="Consolas, monospace"
+        fill="#94a3b8">
+    Designing Interfaces • Connecting Devices • Engineering Data
+  </text>
+
+</svg>
+
+<h3 align="center">BSIT Student | Mentor | Tech Enthusiast</h3>
+
+<div align="center">
+  <!-- Animated Tech Banner -->
+  <img height="180" src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" />
+</div>
+
+<h2 align="center">💻 My Domains</h2>
+<p align="center">
+  <img src="https://img.shields.io/badge/UI/UX-%23FF6F61.svg?style=for-the-badge&logo=adobe" />
+  <img src="https://img.shields.io/badge/IoT-%2314B8A6.svg?style=for-the-badge&logo=arduino" />
+  <img src="https://img.shields.io/badge/Database-%2334A853.svg?style=for-the-badge&logo=mysql" />
+</p>
+
+## 👨‍💻 About Me
+- 🎓 2nd Year **BSIT** student  
+- 🧑‍🏫 Mentor  
+- 💡 Builds functional and user-friendly digital solutions  
+- 📚 Passionate about learning, experimenting, and sharing knowledge  
+
+## 🧠 Forte & Interests
+- 🎨 UI / UX Design  
+- 🌐 Internet of Things (IoT)  
+- 📊 Database Analytics  
+- 🔬 Research & Innovation  
+
+## 🎯 Goals & Vision
+- 💼 Achieve a **6-digit salary**  
+- 🌍 Travel the world  
+- 📈 Grow professionally and personally  
+
+## 🌴 Personal
+- ✈️ Loves traveling  
+- 🎉 Enjoys outdoor and fun activities  
+
+## 🌐 Connect With Me
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://www.facebook.com/lourdevincent29)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/lrdvncnt_/)
+[![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://www.tiktok.com/@vincebw_)
+
+## 🛠️ Tech Stack
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40"/>
+  <img width="12"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" height="40"/>
+</div>
+
+⭐ *Simple. Focused. Always improving.*
